@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Patient Report</title>
+  <link rel="stylesheet" href="ab.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Hospital Daily Patient Report</h1>
+      <h3><a href="medicine.html">Stock</a></h3><h3><a href="patient report.html">Report</a></h3>
+      <h3><a href="prescription.html">Doctor's Prescription</a></h3><h3><a href="uses.html">Uses</a></h3>
+      
+
+      <p id="date"></p>
+    </header>
+
+    <section class="entry-form">
+      <h2>Enter Patient Data</h2>
+      <form id="patientForm">
+        <label for="dateInput">Date:</label>
+        <input type="date" id="dateInput" required><br><br>
+
+        <label for="malePatients">Male Patients:</label>
+        <input type="number" id="malePatients" min="0" required><br><br>
+
+        <label for="femalePatients">Female Patients:</label>
+        <input type="number" id="femalePatients" min="0" required><br><br>
+
+        <label for="doctorName">Doctor Name:</label>
+        <input type="text" id="doctorName" required><br><br>
+
+        <button type="submit">Generate Report</button>
+      </form>
+    </section>
+
+    <section class="report">
+      <h2>Daily Patient Report</h2>
+      <table id="reportTable">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Doctor</th>
+            <th>Male Patients</th>
+            <th>Female Patients</th>
+          </tr>
+          <tr>
+            <td>
+                <td>
+                    <td>
+                        <td></td>
+                    </td>
+                </td>
+
+            </td>
+          </tr>
+          
+        </thead>
+        <tbody>
+          <!-- Report data will appear here -->
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>Hospital Management System | &copy; 2024</p>
+    </footer>
+  </div>
+
+  
+</body>
+</html>

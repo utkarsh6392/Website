@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Patient Report</title>
+  <link rel="stylesheet" href="patient report.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Hospital Daily Patient Report</h1>
+      
+      <p id="date"></p>
+    </header>
+
+    <section class="patient-info">
+      <h2>Patient Details</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Patient Name</th>
+            <th>Age</th>
+            <th>Room No.</th>
+            <th>Status</th>
+            <th>Doctor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rahul</td>
+            <td>45</td>
+            <td>101</td>
+            <td>Stable</td>
+            <td>Dr. Smith</td>
+          </tr>
+          <tr>
+            <td>Radhika</td>
+            <td>34</td>
+            <td>102</td>
+            <td>Critical</td>
+            <td>Dr. Johnson</td>
+          </tr>
+          <tr>
+            <td>Mohan</td>
+            <td>60</td>
+            <td>103</td>
+            <td>Recovering</td>
+            <td>Dr. Lee</td>
+          </tr>
+          <tr>
+            <td>
+                <td>
+                    <td>
+                        <td>
+                            <td>
+
+                            </td>
+                        </td>
+                    </td>
+                </td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <td>
+                    <td>
+                        <td>
+                            <td>
+
+                            </td>
+                        </td>
+                    </td>
+                </td>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>Hospital Management System</p>
+    </footer>
+  </div>
+
+  <script>
+    // Display current date
+    const dateElement = document.getElementById('date');
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString();
+    dateElement.textContent = `Date: ${formattedDate}`;
+  </script>
+</body>
+</html>
